@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "frontweb-5waztyscq-cortes-23s-projects.vercel.app"
+  baseURL: import.meta.env.VITE_API_URL || "https://backend-iwr8.onrender.com/api"
 })
 
 api.interceptors.request.use((config) => {

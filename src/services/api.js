@@ -1,7 +1,8 @@
 import axios from "axios"
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "https://backend-iwr8.onrender.com/api"
+  // ✅ URL CORREGIDA: Ahora apunta al backend activo
+  baseURL: import.meta.env.VITE_API_URL || "https://backend2-rpin.onrender.com/api"
 })
 
 api.interceptors.request.use((config) => {
